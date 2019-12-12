@@ -1,0 +1,56 @@
+Package: plotlyBook
+Title: This is not really an R package, but this is here to list the dependencies for building the output from source.
+Version: 0.1
+Authors@R: person("Carson", "Sievert", email = "cpsievert1@gmail.com",
+                  role = c("aut", "cre"))
+URL: https://github.com/cpsievert/plotly_book
+Depends: 
+  R (>= 3.1.0),
+  tidyverse,
+  shiny,
+  htmltools,
+  miniUI,
+  flexdashboard,
+  plotly,
+  reactR,
+  broom,
+  forecast,
+  quantmod,
+  bookdown,
+  sf,
+  rnaturalearth,
+  cartogram,
+  albersusa,
+  geojsonio,
+  rsvg,
+  withr,
+  USAboundaries,
+  tidycensus,
+  nycflights13,
+  babynames,
+  gapminder,
+  trelliscopejs,
+  ggstat,
+  ggforce,
+  ggmosaic,
+  ggalt,
+  GGally,
+  naniar,
+  leaflet,
+  colorspace,
+  idbr,
+  emo,
+  slopegraph,
+  praise,
+  runpkg
+SystemRequirements: pandoc (>= 1.12.3) - http://johnmacfarlane.net/pandoc
+Remotes:
+  ramnathv/htmlwidgets,
+  react-R/reactR,
+  yihui/knitr#1650,
+  hadley/ggstat,
+  hadley/emo,
+  hrbrmstr/albersusa,
+  hrbrmstr/ggalt,
+  leeper/slopegraph,
+  cpsievert/runpkg
