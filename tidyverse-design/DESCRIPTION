@@ -1,0 +1,22 @@
+Package: design
+Title: Tidyverse design
+Version: 1.0.0
+Authors@R: c(
+  person("Tidyverse", "Team", , "tidyverse@rstudio.com", c("aut", "cre"))
+  )
+Depends: 
+    R (>= 3.1.0)
+Imports: 
+    bench,
+    bookdown,
+    dplyr,
+    glue,
+    nycflights13,
+    rmarkdown,
+    testthat,
+    tibble (>= 2.0.1),
+    tidyverse,
+    vctrs
+Remotes: r-lib/testthat
+URL: https://github.com/tidyverse/design
+BugReports: https://github.com/tidyverse/design/issues
