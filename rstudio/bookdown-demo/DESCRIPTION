@@ -1,0 +1,5 @@
+Package: bookdown.demo
+Title: A minimal book example using bookdown
+Version: 0.0.0.9000
+Authors@R: person("Zhuoer", "Dong", email = "dongzhuoer@mail.nankai.edu.cn", 
+    role = c("aut", "cre"))
