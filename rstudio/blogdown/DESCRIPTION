@@ -1,0 +1,23 @@
+Package: blogdown.book
+Title: Creating Websites with R Markdown
+Version: 0.0.0.9000
+Authors@R: person("Zhuoer", "Dong", email = "dongzhuoer@mail.nankai.edu.cn", 
+    role = c("aut", "cre"))
+Imports:
+    animation,
+    base,
+    blogdown,
+    bookdown,
+    devtools,
+    formatR,
+    htmlwidgets,
+    knitr,
+    pkgdown,
+    processx,
+    rmarkdown,
+    servr,
+    tufte,
+    utils,
+    widgetframe,
+    xaringan,
+    xfun

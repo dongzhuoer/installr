@@ -1,0 +1,31 @@
+Package: rmarkdown.book
+Title: R Markdown: The Definitive Guide
+Version: 0.0.0.9000
+Authors@R: person("Zhuoer", "Dong", email = "dongzhuoer@mail.nankai.edu.cn", 
+    role = c("aut", "cre"))
+Imports:
+    sigma,
+    blogdown,
+    htmlwidgets,
+    webshot,
+    xaringan,
+    animation,
+    pkgdown,
+    tinytex,
+    reticulate,
+    JuliaCall,
+    DT,
+    leaflet,
+    dygraphs,
+    shiny,
+    markdown
+    flexdashboard,
+    tufte,
+    revealjs,
+    prettydoc,
+    rticles,
+    learnr,
+    rmdformats
+Remotes:
+    jjallaire/sigma
+    

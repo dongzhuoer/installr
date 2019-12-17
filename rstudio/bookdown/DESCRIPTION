@@ -1,0 +1,19 @@
+Package: bookdown.book
+Title: Authoring Books and Technical Documents with R Markdown
+Version: 0.0.0.9000
+Authors@R: person("Zhuoer", "Dong", email = "dongzhuoer@mail.nankai.edu.cn", 
+    role = c("aut", "cre"))
+Imports:
+    DT,
+    citr,
+    formatR,
+    svglite,
+    bookdown,
+    htmlwidgets,
+    knitr,
+    miniUI,
+    rmarkdown,
+    rticles,
+    servr,
+    tufte,
+    webshot

@@ -1,0 +1,12 @@
+Package: r.ninja
+Title: R语言忍者秘笈
+Version: 0.0.0.9000
+Authors@R: person("Zhuoer", "Dong", email = "dongzhuoer@mail.nankai.edu.cn", 
+    role = c("aut", "cre"))
+Imports:
+    formatR,
+    rmini
+Remotes:
+    yihui/rmini
+
+    
