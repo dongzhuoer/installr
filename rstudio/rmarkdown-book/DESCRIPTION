@@ -18,7 +18,7 @@ Imports:
     leaflet,
     dygraphs,
     shiny,
-    markdown
+    markdown,
     flexdashboard,
     tufte,
     revealjs,
