@@ -7,6 +7,17 @@ However, cloning the whole project may take too long, especially for Chinese (th
 By the way, R package name can only use `.` to separate words, so I might modify a package's name, like [r-pkgs](https://github.com/hadley/r-pkgs) -> `r.pkgs`
 
 
+# Copied from GitHub
+
+- https://github.com/tidyverse/tidyeval/blob/master/DESCRIPTION
+
+# compiled by Zhuoer Dong
+
+- rstudio/bookdown, I extract `setup` chunk of `index.Rmd` and search `@R-` for all cited R packages. So there may be some redundency, but anyway I just want that the book can be built, the exact dependency should be specified by the author.
+- rstudio/blogdown, I mainly search `@R-` for all cited R packages and search `::` for all mentioned packages. So there may be some redundency, but anyway I just want that the book can be built, the exact dependency should be specified by the author.
+- rstudio/rmakrdown-book, Mainly copied from `knitr::write_bib()` in `20-references.Rmd`, plus my personal experience. So there may be some redundency, but anyway I just want that the book can be built, the exact dependency should be specified by the author.
+- yihui/r-ninja, Actually, even if you don't install this package, yihui has written some code in `index.Rmd` to automatically install dependencies. Later I find that **formatR** needs to manually install.
+
 
 -----------------------
 
