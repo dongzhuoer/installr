@@ -7,7 +7,7 @@ notifications:
   email: false
 
 script: 
-  - git remote set-utl origin https://$GITHUB_PAT@github.com/$TRAVIS_REPO_SLUG.git
+  - git remote set-url origin https://$GITHUB_PAT@github.com/$TRAVIS_REPO_SLUG.git
   - git add --all && git commit -m "Travis build at `date '+%Y-%m-%d %H:%M:%S'`" --allow-empty && git push -f
 
 # wget -O cpsievert/plotly_book/DESCRIPTION https://github.com/cpsievert/plotly_book/raw/master/DESCRIPTION
@@ -17,15 +17,11 @@ script:
 # wget -O hadley/mastering-shiny/DESCRIPTION https://github.com/hadley/mastering-shiny/raw/master/DESCRIPTION
 # wget -O hadley/r4ds/DESCRIPTION https://github.com/hadley/r4ds/raw/master/DESCRIPTION
 # wget -O hadley/r-pkgs/DESCRIPTION https://github.com/hadley/r-pkgs/raw/master/DESCRIPTION
-# wget -O rstudio/blogdown/DESCRIPTION https://github.com/rstudio/blogdown/raw/master/DESCRIPTION
 # wget -O rstudio/bookdown-demo/DESCRIPTION https://github.com/rstudio/bookdown-demo/raw/master/DESCRIPTION
-# wget -O rstudio/bookdown/DESCRIPTION https://github.com/rstudio/bookdown/raw/master/DESCRIPTION
-# wget -O rstudio/rmarkdown-book/DESCRIPTION https://github.com/rstudio/rmarkdown-book/raw/master/DESCRIPTION
 # wget -O tidyverse/design/DESCRIPTION https://github.com/tidyverse/design/raw/master/DESCRIPTION
 # wget -O tidyverse/style/DESCRIPTION https://github.com/tidyverse/style/raw/master/DESCRIPTION
 # wget -O tidyverse/tidyeval/DESCRIPTION https://github.com/tidyverse/tidyeval/raw/master/DESCRIPTION
 # wget -O wch/rgcookbook/DESCRIPTION https://github.com/wch/rgcookbook/raw/master/DESCRIPTION
-# wget -O yihui/r-ninja/DESCRIPTION https://github.com/yihui/r-ninja/raw/master/DESCRIPTION
 
 
 
