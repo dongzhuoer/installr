@@ -1,5 +1,6 @@
 Package: bookdown.demo
-Title: A minimal book example using bookdown
-Version: 0.0.0.9000
-Authors@R: person("Zhuoer", "Dong", email = "dongzhuoer@mail.nankai.edu.cn", 
-    role = c("aut", "cre"))
+Type: Book
+Title: Does not matter.
+Version: 0.0.1
+Imports: bookdown
+Remotes: rstudio/bookdown

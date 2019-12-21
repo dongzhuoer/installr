@@ -9,10 +9,8 @@ By the way, R package name can only use `.` to separate words, so I might modify
 
 # Copied from GitHub
 
-- 
-
-
-r4ds add `devtools`
+- r4ds add `devtools`
+- rename bookdown.demo
 
 # compiled by Zhuoer Dong
 
