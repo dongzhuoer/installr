@@ -7,10 +7,11 @@ However, cloning the whole project may take too long, especially for Chinese (th
 By the way, R package name can only use `.` to separate words, so I might modify a package's name, like [r-pkgs](https://github.com/hadley/r-pkgs) -> `r.pkgs`
 
 
-# Copied from GitHub
+# adapted from GitHub
 
 - r4ds add `devtools`
-- rename bookdown.demo
+
+
 
 # compiled by Zhuoer Dong
 
