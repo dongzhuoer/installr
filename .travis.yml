@@ -6,7 +6,9 @@ git:
 notifications:
   email: false
 
-script: skip
+script: 
+  - git remote set-utl origin https://$GITHUB_PAT@github.com/$TRAVIS_REPO_SLUG.git
+  - git add --all && git commit -m "Travis build at `date '+%Y-%m-%d %H:%M:%S'`" --allow-empty && git push -f
 
 # wget -O cpsievert/plotly_book/DESCRIPTION https://github.com/cpsievert/plotly_book/raw/master/DESCRIPTION
 # wget -O csgillespie/efficientR/DESCRIPTION https://github.com/csgillespie/efficientR/raw/master/DESCRIPTION
@@ -35,6 +37,6 @@ script: skip
 #   # pkgdown and deploy to GitHub Pages
 #   - if [ "$job" == "pkgdown" ]; then docker exec rlang0 Rscript -e "remotes::install_local(force = TRUE, upgrade = TRUE, dependencies = TRUE)"; fi;
 #   - if [ "$job" == "pkgdown" ]; then docker exec rlang0 Rscript -e "pkgdown::build_site()"; fi;
-#   - if [ "$job" == "pkgdown" ]; then git clone --depth 1 -b gh-pages https://$GITHUB_PAT@github.com/$TRAVIS_REPO_SLUG.git $HOME/gh-pages && mv $HOME/gh-pages/.git pkgdown; fi;
-#   - if [ "$job" == "pkgdown" ]; then cd pkgdown && rm .gitignore && git add --all && git commit -m "[skip ci] build pkgdown at `date '+%Y-%m-%d %H:%M:%S'`" --allow-empty && git push -f && cd ..; fi;
+#   - if [ "$job" == "pkgdown" ]; then git clone --depth 1 -b gh-pages  $HOME/gh-pages && mv $HOME/gh-pages/.git pkgdown; fi;
+#   - if [ "$job" == "pkgdown" ]; then cd pkgdown && rm .gitignore && 
 
