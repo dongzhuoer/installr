@@ -1,0 +1,40 @@
+dist: bionic
+language: minimal
+git:
+  depth: false
+  submodules: false
+notifications:
+  email: false
+
+script: skip
+
+# wget -O cpsievert/plotly_book/DESCRIPTION https://github.com/cpsievert/plotly_book/raw/master/DESCRIPTION
+# wget -O csgillespie/efficientR/DESCRIPTION https://github.com/csgillespie/efficientR/raw/master/DESCRIPTION
+# wget -O hadley/adv-r/DESCRIPTION https://github.com/hadley/adv-r/raw/master/DESCRIPTION
+# wget -O hadley/ggplot2-book/DESCRIPTION https://github.com/hadley/ggplot2-book/raw/master/DESCRIPTION
+# wget -O hadley/mastering-shiny/DESCRIPTION https://github.com/hadley/mastering-shiny/raw/master/DESCRIPTION
+# wget -O hadley/r4ds/DESCRIPTION https://github.com/hadley/r4ds/raw/master/DESCRIPTION
+# wget -O hadley/r-pkgs/DESCRIPTION https://github.com/hadley/r-pkgs/raw/master/DESCRIPTION
+# wget -O rstudio/blogdown/DESCRIPTION https://github.com/rstudio/blogdown/raw/master/DESCRIPTION
+# wget -O rstudio/bookdown-demo/DESCRIPTION https://github.com/rstudio/bookdown-demo/raw/master/DESCRIPTION
+# wget -O rstudio/bookdown/DESCRIPTION https://github.com/rstudio/bookdown/raw/master/DESCRIPTION
+# wget -O rstudio/rmarkdown-book/DESCRIPTION https://github.com/rstudio/rmarkdown-book/raw/master/DESCRIPTION
+# wget -O tidyverse/design/DESCRIPTION https://github.com/tidyverse/design/raw/master/DESCRIPTION
+# wget -O tidyverse/style/DESCRIPTION https://github.com/tidyverse/style/raw/master/DESCRIPTION
+# wget -O tidyverse/tidyeval/DESCRIPTION https://github.com/tidyverse/tidyeval/raw/master/DESCRIPTION
+# wget -O wch/rgcookbook/DESCRIPTION https://github.com/wch/rgcookbook/raw/master/DESCRIPTION
+# wget -O yihui/r-ninja/DESCRIPTION https://github.com/yihui/r-ninja/raw/master/DESCRIPTION
+
+
+
+#   # build
+#   - if [ "$job" == "build" ];   then docker exec rlang0 Rscript -e "remotes::install_local(force = TRUE, upgrade = TRUE)"; fi;
+#   # testthat
+#   - if [ "$job" == "test" ];    then docker exec rlang0 Rscript -e "remotes::install_deps(force = TRUE,  upgrade = TRUE, dependencies = TRUE)"; fi;
+#   - if [ "$job" == "test" ]; then docker exec rlang0 Rscript -e "pkgload::load_all(); testthat::test_dir('tests/testthat/'); testthat::test_dir('tests/testthat/', reporter = 'fail')"; fi; # default reports summary result, fail exit no-zero when a test fails
+#   # pkgdown and deploy to GitHub Pages
+#   - if [ "$job" == "pkgdown" ]; then docker exec rlang0 Rscript -e "remotes::install_local(force = TRUE, upgrade = TRUE, dependencies = TRUE)"; fi;
+#   - if [ "$job" == "pkgdown" ]; then docker exec rlang0 Rscript -e "pkgdown::build_site()"; fi;
+#   - if [ "$job" == "pkgdown" ]; then git clone --depth 1 -b gh-pages https://$GITHUB_PAT@github.com/$TRAVIS_REPO_SLUG.git $HOME/gh-pages && mv $HOME/gh-pages/.git pkgdown; fi;
+#   - if [ "$job" == "pkgdown" ]; then cd pkgdown && rm .gitignore && git add --all && git commit -m "[skip ci] build pkgdown at `date '+%Y-%m-%d %H:%M:%S'`" --allow-empty && git push -f && cd ..; fi;
+
