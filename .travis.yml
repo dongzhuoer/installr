@@ -7,6 +7,7 @@ notifications:
   email: false
 
 script: 
+# mkdir -p {cpsievert,csgillespie,hadley,rstudio,tidyverse,wch}
 # wget -O cpsievert/plotly_book/DESCRIPTION https://github.com/cpsievert/plotly_book/raw/master/DESCRIPTION
 # wget -O csgillespie/efficientR/DESCRIPTION https://github.com/csgillespie/efficientR/raw/master/DESCRIPTION
 # wget -O hadley/adv-r/DESCRIPTION https://github.com/hadley/adv-r/raw/master/DESCRIPTION
@@ -20,10 +21,9 @@ script:
 # wget -O tidyverse/tidyeval/DESCRIPTION https://github.com/tidyverse/tidyeval/raw/master/DESCRIPTION
 # wget -O wch/rgcookbook/DESCRIPTION https://github.com/wch/rgcookbook/raw/master/DESCRIPTION
   - git remote set-url origin https://$GITHUB_PAT@github.com/$TRAVIS_REPO_SLUG.git
-  - git reset master
-  - git status
+  - git checkout master
   - git add --all
-  - git commit -m "Travis build at `date '+%Y-%m-%d %H:%M:%S'`" --allow-empty
+  - git commit --allow-empty -m "Travis build at `date '+%Y-%m-%d %H:%M:%S'`"
   - git push -f
 
 
