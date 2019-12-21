@@ -7,9 +7,6 @@ notifications:
   email: false
 
 script: 
-  - git remote set-url origin https://$GITHUB_PAT@github.com/$TRAVIS_REPO_SLUG.git
-  - git add --all && git commit -m "Travis build at `date '+%Y-%m-%d %H:%M:%S'`" --allow-empty && git push -f
-
 # wget -O cpsievert/plotly_book/DESCRIPTION https://github.com/cpsievert/plotly_book/raw/master/DESCRIPTION
 # wget -O csgillespie/efficientR/DESCRIPTION https://github.com/csgillespie/efficientR/raw/master/DESCRIPTION
 # wget -O hadley/adv-r/DESCRIPTION https://github.com/hadley/adv-r/raw/master/DESCRIPTION
@@ -22,17 +19,8 @@ script:
 # wget -O tidyverse/style/DESCRIPTION https://github.com/tidyverse/style/raw/master/DESCRIPTION
 # wget -O tidyverse/tidyeval/DESCRIPTION https://github.com/tidyverse/tidyeval/raw/master/DESCRIPTION
 # wget -O wch/rgcookbook/DESCRIPTION https://github.com/wch/rgcookbook/raw/master/DESCRIPTION
+  - git remote set-url origin https://$GITHUB_PAT@github.com/$TRAVIS_REPO_SLUG.git
+  - git reset master
+  - git add --all && git commit -m "Travis build at `date '+%Y-%m-%d %H:%M:%S'`" --allow-empty && git push -f
 
-
-
-#   # build
-#   - if [ "$job" == "build" ];   then docker exec rlang0 Rscript -e "remotes::install_local(force = TRUE, upgrade = TRUE)"; fi;
-#   # testthat
-#   - if [ "$job" == "test" ];    then docker exec rlang0 Rscript -e "remotes::install_deps(force = TRUE,  upgrade = TRUE, dependencies = TRUE)"; fi;
-#   - if [ "$job" == "test" ]; then docker exec rlang0 Rscript -e "pkgload::load_all(); testthat::test_dir('tests/testthat/'); testthat::test_dir('tests/testthat/', reporter = 'fail')"; fi; # default reports summary result, fail exit no-zero when a test fails
-#   # pkgdown and deploy to GitHub Pages
-#   - if [ "$job" == "pkgdown" ]; then docker exec rlang0 Rscript -e "remotes::install_local(force = TRUE, upgrade = TRUE, dependencies = TRUE)"; fi;
-#   - if [ "$job" == "pkgdown" ]; then docker exec rlang0 Rscript -e "pkgdown::build_site()"; fi;
-#   - if [ "$job" == "pkgdown" ]; then git clone --depth 1 -b gh-pages  $HOME/gh-pages && mv $HOME/gh-pages/.git pkgdown; fi;
-#   - if [ "$job" == "pkgdown" ]; then cd pkgdown && rm .gitignore && 
 
