@@ -12,6 +12,7 @@ By the way, R package name can only use `.` to separate words, so I might modify
 - https://github.com/tidyverse/tidyeval/blob/master/DESCRIPTION
 
 
+r4ds add `devtools`
 
 # compiled by Zhuoer Dong
 
