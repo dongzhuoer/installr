@@ -26,5 +26,5 @@ script:
   - git remote set-url origin https://$GITHUB_PAT@github.com/$TRAVIS_REPO_SLUG.git
   - git checkout master
   - git add --all
-  - git commit --allow-empty -m "Travis build at `date '+%Y-%m-%d %H:%M:%S'`"
+  - git commit --allow-empty -m "[skip ci] Travis build at `date '+%Y-%m-%d %H:%M:%S'`"
   - git push
