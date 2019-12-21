@@ -21,6 +21,9 @@ script:
 # wget -O wch/rgcookbook/DESCRIPTION https://github.com/wch/rgcookbook/raw/master/DESCRIPTION
   - git remote set-url origin https://$GITHUB_PAT@github.com/$TRAVIS_REPO_SLUG.git
   - git reset master
-  - git add --all && git commit -m "Travis build at `date '+%Y-%m-%d %H:%M:%S'`" --allow-empty && git push -f
+  - git status
+  - git add --all
+  - git commit -m "Travis build at `date '+%Y-%m-%d %H:%M:%S'`" --allow-empty
+  - git push -f
 
 
