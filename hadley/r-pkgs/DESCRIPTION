@@ -17,8 +17,6 @@ Imports:
     stringi,
     testthat,
     tidyverse,
-    withr,
-    foofactors
+    withr
 Remotes:  
-    jennybc/foofactors,
     r-lib/devtools
