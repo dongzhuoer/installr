@@ -3,8 +3,7 @@ Title: install nutshell from GitHub
 Version: 0.0.1
 Imports: 
     nutshell.bbdb,
-    nutshell.audioscrobbler,
-    nutshell
+    nutshell.audioscrobbler
 Remotes:
     cran/nutshell,
     cran/nutshell.bbdb,
