@@ -1,0 +1,11 @@
+Package: nutshell2
+Title: install nutshell from GitHub
+Version: 0.0.1
+Imports: 
+    nutshell.bbdb,
+    nutshell.audioscrobbler,
+    nutshell
+Remotes:
+    cran/nutshell,
+    cran/nutshell.bbdb,
+    cran/nutshell.audioscrobbler
