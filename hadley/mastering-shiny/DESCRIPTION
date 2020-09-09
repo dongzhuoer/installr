@@ -4,6 +4,7 @@ Version: 0.0.1
 Imports: 
     gapminder,
     ggforce,
+    globals,
     openintro,
     shiny,
     shinycssloaders,
@@ -27,4 +28,5 @@ Remotes:
     rstudio/thematic,
     rstudio/htmltools,
     rstudio/bookdown,
+    rstudio/shinytest,
     r-lib/testthat
